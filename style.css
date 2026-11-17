@@ -1,0 +1,37 @@
+#introcontainer{
+    width: 100vw;
+    margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#titletext{
+    background-image: url(Edison\'s\ Canon\ Logo.PNG);
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40vw;
+    height: 90vh;
+}
+
+.topbar{
+    background-color:cornflowerblue;
+    position: absolute;
+    width: 100vw;
+    height: 6rem;
+    margin:0px;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+}
+
+.topbarbutton{
+    font-size: xx-large;
+    background-color: transparent;
+    color: white;
+    width: 10rem;
+    height: 5rem;
+    border-color: transparent;
+
+}
