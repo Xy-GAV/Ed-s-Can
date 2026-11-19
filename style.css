@@ -7,7 +7,7 @@
 }
 
 #titletext{
-  background-image: url(Edison\'s\ Canon\ Logo.PNG);
+  /* background-image: url(Edison\'s\ Canon\ Logo.PNG); */
   background-color: transparent;
   background-size: contain;
   background-repeat: no-repeat;
@@ -36,7 +36,7 @@ body{
 }
 
 .topbar{
-  gap: 5rem;
+  /* gap: 10vw; */
   background-color:cornflowerblue;
   position: absolute;
   width: 100vw;
