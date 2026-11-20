@@ -7,15 +7,14 @@
 
 
 #introcontainer{
-  width: 100vw;
-  margin: auto;
+  width:auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 #titletext{
-  /* background-image: url(Edison\'s\ Canon\ Logo.PNG); */
+  background-image: url(EdisonCanonLogo.PNG);
   background-color: transparent;
   background-size: contain;
   background-repeat: no-repeat;
@@ -32,6 +31,22 @@ body{
   padding: 0;
   margin: 0;
 }
+
+h1{
+  line-height: .01rem;
+  baseline-shift: 1rem;
+  text-transform: uppercase;
+  font-family: Canon;
+  font-size: 6rem;
+}
+
+.leftcontainer{
+  margin-left: 10px;
+  padding: 10px;
+  background-color: grey;
+  width: 45vw;
+}
+
 
 /* -----------------------------------NAV BAR------------------------------------------- */
 
@@ -53,7 +68,6 @@ body{
   width: 100vw;
   height: 6rem;
   margin: 0px;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -74,13 +88,30 @@ body{
 
 }
 
+@media (min-width:320px){
+  .topbarmobile{
+    display: flex;
+  }
+  .topbar{
+    display: none;
+  }
+}
+
+@media (min-width:641px) {
+  .topbarmobile{
+    display: none;
+  }
+  .topbar{
+    display: flex;
+  }
+}
+
 .topbarmobile{
   background-color:cornflowerblue;
   position: absolute;
   width: 100vw;
   height: 5rem;
   margin: 0px;
-  display: flex;
   align-items: left;
   justify-content: left;
   padding-left: 1rem;

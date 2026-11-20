@@ -2,17 +2,18 @@ let open = false;
 console.log("hi")
 
 
+document.getElementById("HamburgerIcon").onclick = function() {togglenav()}
 
-if(document.getElementById('HamburgerIcon').clicked === true)
-{
+function togglenav(){
    console.log("the burger is pressed...")
 
-   if(open==false){
+   if(open===false){
     document.getElementById("topbarmobilecontent").style.display = "inline"
     open=true
-   }
-   if(open==true){
+   } else{
     document.getElementById("topbarmobilecontent").style.display = "none"
     open=false
    }
+
+   console.log(open)
 }
