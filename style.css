@@ -33,11 +33,9 @@ body{
 }
 
 h1{
-  line-height: .01rem;
-  baseline-shift: 1rem;
   text-transform: uppercase;
   font-family: Canon;
-  font-size: 6rem;
+  font-size: 3rem;
 }
 
 .leftcontainer{
@@ -75,14 +73,12 @@ h1{
 
 
 .topbarbutton{
-  line-height: .01rem;
-  baseline-shift: 1rem;
   text-transform: uppercase;
   font-family: Canon;
-  font-size: 8rem;
+  font-size: 3rem;
   background-color: transparent;
   color: white;
-  width: 50rem;
+  width: 30rem;
   height: 5rem;
   border-color: transparent;
 
