@@ -24,29 +24,6 @@
   font-style: normal;
 }
 
-
-
-#introcontainer{
-  width:auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#titletext{
-  background-image: url(EdisonCanonLogo.PNG);
-  background-color: transparent;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 40vw;
-  height: 50vh;
-}
-.nonodonttouch{
-  width: 100vw;
-  margin: 0px;
-  height: 6rem;
-}
-
 body{
   padding: 0;
   margin: 0;
@@ -63,6 +40,36 @@ p{
   font-family: "Poiret One", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.inputtext{
+  font-size: 1.5rem;
+
+}
+.inputsubmit{
+  font-size:1.5rem;
+  
+}
+
+::-webkit-input-placeholder{
+  color: rgb(34, 93, 255);
+}
+/* :-moz-placeholder ::-moz-placeholder :-ms-input-placeholder */
+
+#introcontainer{
+  width:auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#titletext{
+  background-image: url(EdisonCanonLogo.PNG);
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40vw;
+  height: 50vh;
 }
 
 .leftcontainer{
@@ -91,7 +98,11 @@ p{
 }
 
 /* -----------------------------------NAV BAR------------------------------------------- */
-
+.nonodonttouch{
+  width: 100vw;
+  margin: 0px;
+  height: 6rem;
+}
 
 .svgicon{
   mask-repeat: no-repeat;
