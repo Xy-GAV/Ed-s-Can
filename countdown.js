@@ -1,4 +1,4 @@
-let countDownDate = new Date("Jan 5, 2086 15:37:25").getTime();
+let countDownDate = new Date("Feb 25, 2086 15:37:25").getTime();
 
 // Update the count down every 1 second
 let x = setInterval(function() {
@@ -17,7 +17,8 @@ let x = setInterval(function() {
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("countdown").innerHTML = years + "y" + hours + "h "
+  document.getElementById("yearcountdown").innerHTML = years + "y";
+  document.getElementById("countdown").innerHTML = hours + "h "
   + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text
