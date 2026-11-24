@@ -1,8 +1,20 @@
 let name = " "
 let audio = document.createElement("audio")
 audio.src = "https://www.youtube.com/watch?v=inRXBlYgMGI"
-const CDcase = document.getElementsByClassName("CDcase")
+const CDcase = document.getElementById("CDcase")
 let playing = false
+
+
+let songs = {
+
+  psychFac: new Howl({
+    src: ["https://www.youtube.com/watch?v=inRXBlYgMGI"],
+    // loop: false,
+    //   onend: function() {console.log("Done playing song!")}
+  }) 
+}
+
+
 
 $("#textinput").on('keyup', function (e) {
     if (e.key === 'Enter' || e.keyCode === 13) {
@@ -10,7 +22,17 @@ $("#textinput").on('keyup', function (e) {
     }
 });
 
-CDcase.onclick = function() {togglePlay()}
+// CDcase.onclick = function() {togglePlay()}
+CDcase.onclick = function() {
+  if(playing===false){
+    songs.psychFac.play();
+    playing=true
+   } else{
+    playing=false
+   }
+
+   console.log(playing)
+}
 
 
 
