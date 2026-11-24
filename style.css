@@ -42,6 +42,49 @@ p{
   font-style: normal;
 }
 
+/* -----------------END OF GENERALS----------------- */
+
+#frontTriContain{
+
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-end; 
+  align-content: end;
+  flex-wrap: wrap; 
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+#BackTriContain{
+  z-index: -10;
+  display: flex;
+  flex-direction: column; 
+  flex-wrap: wrap; 
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.scaleneTriangle {
+  width: 70vw;
+  height: 65vh;
+  background: white;
+  clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+}
+
+.scaleneTriangleUD {
+  width: 70vw;
+  height: 65vh;
+  background: white;
+  clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+  transform: rotate(180deg);
+}
+
+
+/* -----------------END OF Character styling----------------- */
+
+
 .inputtext{
   font-size: 2rem;
 
@@ -98,6 +141,13 @@ p{
 }
 
 /* -----------------------------------NAV BAR------------------------------------------- */
+
+iframe{
+  z-index: 10000;
+  position: relative;
+}
+
+
 .nonodonttouch{
   width: 100vw;
   margin: 0px;
