@@ -86,13 +86,18 @@ p{
   margin-top: 8rem;
   position: fixed;
   display: flex;
-  background-color: gray;
+  /* background-color: gray; */
+  background-color: transparent;
   width: 20rem;
   height: 30rem;
 
 }
 
-#CD{
+.CDcontainer{
+  display: flex;
+}
+
+.CD{
   width: 7rem;
   height: 7rem;
   background-image: url(uiImages/CD.PNG);
@@ -105,7 +110,7 @@ p{
   100% { transform: rotate(360deg); }
 }
 
-#CD:hover{
+.CD:hover{
   animation-name: spinAnimation;
   animation-duration: 1s;
   animation-timing-function: ease;
@@ -113,6 +118,31 @@ p{
   animation-direction: normal;
   animation-fill-mode: both;
 }
+
+.CDcase{
+  width: 7rem;
+  height: 7rem;
+  background-repeat: no-repeat;
+  background-image: url(https://img.youtube.com/vi/inRXBlYgMGI/mqdefault.jpg);
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.379));
+  transform: translate(-2rem);
+}
+
+.CDcase:hover{
+  animation-name: slideAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  
+}
+
+@keyframes slideAnimation {
+  0% {}
+  100% { transform: translateX(-.3rem)}
+}
+
 
 /* -----------------END OF Character styling----------------- */
 

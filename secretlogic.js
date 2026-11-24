@@ -1,10 +1,18 @@
 let name = " "
+let audio = document.createElement("audio")
+audio.src = "https://www.youtube.com/watch?v=inRXBlYgMGI"
+const CDcase = document.getElementsByClassName("CDcase")
+let playing = false
 
 $("#textinput").on('keyup', function (e) {
     if (e.key === 'Enter' || e.keyCode === 13) {
         submitfunc()
     }
 });
+
+CDcase.onclick = function() {togglePlay()}
+
+
 
 function submitfunc(){
   name = document.getElementById("textinput").value;
@@ -23,4 +31,24 @@ function changeScene(){
   else if(name.toLowerCase()==="cardinal" || name.toLowerCase()==="cardinal direction" || name.toLowerCase()==="cardinal direction, pol" || name.toLowerCase()==="son of polaris"){
     console.log("Cardinal scene")
   }
+}
+
+function togglePlay(){
+  if(playing===false){
+    playAudio()
+    playing=true
+   } else{
+    pauseAudio()
+    playing=false
+   }
+
+   console.log(playing)
+}
+
+function playAudio(){
+  audio.play()
+}
+
+function pauseAudio(){
+  audio.pause()
 }
