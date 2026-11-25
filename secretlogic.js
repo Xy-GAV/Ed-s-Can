@@ -1,19 +1,8 @@
 let name = " "
-let audio = document.createElement("audio")
-audio.src = "https://www.youtube.com/watch?v=inRXBlYgMGI"
+let Audio = document.getElementById("characterAudio")
+// audio.src = "https://www.youtube.com/watch?v=inRXBlYgMGI"
 const CDcase = document.getElementById("CDcase")
 let playing = false
-
-
-let songs = {
-
-  psychFac: new Howl({
-    src: ["https://www.youtube.com/watch?v=inRXBlYgMGI"],
-    // loop: false,
-    //   onend: function() {console.log("Done playing song!")}
-  }) 
-}
-
 
 
 $("#textinput").on('keyup', function (e) {
@@ -25,9 +14,10 @@ $("#textinput").on('keyup', function (e) {
 // CDcase.onclick = function() {togglePlay()}
 CDcase.onclick = function() {
   if(playing===false){
-    songs.psychFac.play();
+    EmbedController.togglePlay();
     playing=true
    } else{
+    EmbedController.togglePlay();
     playing=false
    }
 
@@ -55,22 +45,3 @@ function changeScene(){
   }
 }
 
-function togglePlay(){
-  if(playing===false){
-    playAudio()
-    playing=true
-   } else{
-    pauseAudio()
-    playing=false
-   }
-
-   console.log(playing)
-}
-
-function playAudio(){
-  audio.play()
-}
-
-function pauseAudio(){
-  audio.pause()
-}
